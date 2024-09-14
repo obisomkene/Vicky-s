@@ -1,0 +1,99 @@
+.header{
+    position: fixed;
+    padding: 10px 20px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(125, 125, 125, 0.2);
+    backdrop-filter: blur(20);
+    -webkit-backdrop-filter: blur(200);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.logocontainer{
+
+}
+.logo{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: italic ;
+font-size: 2rem;
+color: darkred;
+}
+.logochild{
+color: rgba(255, 158, 48, 0.801);
+}
+.navlink{
+text-decoration: none;
+color: black;
+/* font-weight: bolder; */
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.2rem;
+transition: all 300ms ease-in;
+}
+.navcontainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navlink:active{
+    color: black;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+.navlink:hover{
+    color: black;
+    border-bottom: 1.5px solid grey;
+    padding-bottom: 1px;
+}
+.closenavbtn{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    display: none;
+}
+.navbtntoggle{
+ background: none;
+    border: none;
+    font-size: 1.2rem;
+    display: none;
+}
+@media screen and (max-width:812px){
+    nav{
+        /* display:none; */
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        right: -200%;
+        width: 250px;
+        background-color: rgba(125, 125, 125, 0.8);
+    backdrop-filter: blur(20);
+    -webkit-backdrop-filter: blur(200);
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 50px;
+    align-items: flex-start;
+    padding-left: 20px;
+    transition: all 1000ms ease-in-out;
+    }
+    .shownav{
+        right: 0px;
+    }
+    .closenavbtn{
+   
+    display: block;
+}
+.navbtntoggle{
+ 
+    display: block;
+}
+
+}
